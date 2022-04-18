@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Bob Drowss</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.37/Tone.js" integrity="sha512-gK8OnTXn8cTYkHqYX+bhzjQ1rClAPuG2eMy+oRuV26mSuE0EbZeULFKdyc/YGX1Z/JsC06FXxQttdX4aahjSMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                background: rgb(241, 241, 241);
+            }
+            canvas {
+                width:  640px;
+                height: 480px;
+                /* border: 1px solid black; */
+                box-shadow: -5px 10px 20px 5px grey;
+            }
+            #container {
+                text-align: center;
+            }
+            body, button, select {
+                font-family: 'Patrick Hand', cursive;
+                font-size: 20pt;
+            }
+            .muted {
+                color: gray;
+                border-color: lightgray;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Bob Drawss 🎨</h1>
+            <p>Ever wanted to experience the joy by painting on a canvas, but ur millennial butt needs a screen and buttons in order to feel anything?<br>Well, this web toy won't help u, sorry. But u can try anyway.</p>
+            <canvas id="canvas" width="640" height="480"></canvas>
+            <p>
+                <button id="add">Add a</button>
+                <select id="modifier">
+                    <option value="old">old</option>
+                    <option value="large">large</option>
+                    <option value="happy">happy</option>
+                </select>
+                <select id="object">
+                    <option value="background">background</option>
+                    <option value="land">land</option>
+                    <option value="tree">tree</option>
+                </select>
+            </p>
+            <p> \
+                <a href="#" id="save" class="muted">save</a> /
+                <a href="#" id="mute" class="muted">mute</a> \
+                <a href="#" id="reset" class="muted">reset</a> \
+            </p>
+            <script src="main.js"></script>
+        </div>
+
+
+        <div hidden>
+            <img src="assets/tree1.png" id="tree1" />
+            <img src="assets/tree2.png" id="tree2" />
+            <img src="assets/tree3.png" id="tree3" />
+            <img src="assets/tree4.png" id="tree4" />
+            <img src="assets/land1.png" id="land1" />
+            <img src="assets/land2.png" id="land2" />
+            <img src="assets/land3.png" id="land3" />
+            <img src="assets/land4.png" id="land4" />            
+        </div>
+    </body>
+</html>
+
+
